@@ -315,7 +315,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>ᴛʜɪs ᴘᴇʀsᴏɴ ɪs sᴘᴀᴍᴡᴀᴛᴄʜᴇᴅ!</b>"
             text += f"\nʀᴇᴀꜱᴏɴ: <pre>{spamwtc.reason}</pre>"
-            text += "\nᴀᴘᴘᴇᴀʟ ᴀᴛ @AbishnoiMF"
+            text += "\nᴀᴘᴘᴇᴀʟ ᴀᴛ @Chatting_Spot"
     except:
         pass  # don't crash if api is down somehow...
 
@@ -339,12 +339,12 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe level for this user is Villain"
         disaster_level_present = True
-    elif user.id == 5938660179:
+    elif user.id == 5887412907:
         text += "\n\nᴄᴏ-ᴏᴡᴇʀɴ ᴏғ ᴀ ʙᴏᴛ."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/Abishnoi_bots/60">ʟᴇᴠᴇʟʟɪɴɢ</a>]'.format(
+        text += ' [<a href="https://t.me/BotzArena">ʟᴇᴠᴇʟʟɪɴɢ</a>]'.format(
             bot.username,
         )
 
@@ -381,10 +381,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Abishnoi_bots/60"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/BotzArena"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/Abishnoi_bots/60"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/BotzArena"
                             ),
                         ],
                     ]
@@ -401,10 +401,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/Abishnoi_bots/60"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/BotzArena"
                             ),
                             InlineKeyboardButton(
-                                "ʟᴇᴠᴇʟʟɪɴɢ", url="https://t.me/Abishnoi_bots/60"
+                                "ʟᴇᴠᴇʟʟɪɴɢ", url="https://t.me/BotzArena"
                             ),
                         ],
                     ]
@@ -517,8 +517,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://github.com/Abishnoi69/ExonRobot) | ⍚\n\n "
-            + "╘══「 by [ᴀʙɪsʜɴᴏɪ](github.com/Abishnoi69) 」\n",
+            + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://github.com/MaybePiyush/AkameRobot) | ⍚\n\n "
+            + "╘══「 by [PIYUSH GARG](github.com/MaybePiyush) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
@@ -531,9 +531,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://github.com/Abishnoi69/ExonRobot) | ⍚ \n\n"
+                    + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://github.com/MaybePiyush/AkameRobot) | ⍚ \n\n"
                 )
-                + "╘══「 by [ᴅʏɴᴀᴍɪᴄ](github.com/Abishnoi69) 」\n"
+                + "╘══「 by [PIYUSH GARG](github.com/MaybePiyush) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
